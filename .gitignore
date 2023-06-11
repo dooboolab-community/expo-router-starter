@@ -62,3 +62,9 @@ buck-out/
 # Expo
 .expo/*
 web-build/
+
+# Yarn
+.yarn/*
+!.yarn/releases
+
+.env

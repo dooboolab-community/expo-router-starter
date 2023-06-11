@@ -1,27 +1,45 @@
-import React from 'react';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
-import {css} from '@emotion/native';
+import type {ReactElement} from 'react';
+import styled from '@emotion/native';
 import {useDooboo} from 'dooboo-ui';
 import StatusBarBrightness from 'dooboo-ui/uis/StatusbarBrightness';
 import {SplashScreen, Stack} from 'expo-router';
 
 function Index(): React.ReactElement {
-  const {assetLoaded} = useDooboo();
+  const {assetLoaded, theme} = useDooboo();
 
   if (!assetLoaded) {
     return <SplashScreen />;
   }
 
   return (
-    <GestureHandlerRootView
-      style={css`
-        flex: 1;
-      `}
+    <Stack
+      screenOptions={{
+        headerStyle: {
+          backgroundColor: theme.bg.basic,
+        },
+        headerTintColor: theme.text.label,
+        headerTitleStyle: {
+          fontWeight: 'bold',
+          color: theme.text.basic,
+        },
+      }}
     >
-      <StatusBarBrightness />
-      <Stack>{/* Note: Only modals are written here.  */}</Stack>
-    </GestureHandlerRootView>
+      {/* Note: Only modals are written here.  */}
+    </Stack>
   );
 }
 
-export default Index;
+const Container = styled.View`
+  flex: 1;
+  align-self: stretch;
+  background-color: ${({theme}) => theme.bg.paper};
+`;
+
+export default function LayoutWithProvider(): ReactElement {
+  return (
+    <Container>
+      <StatusBarBrightness />
+      <Index />
+    </Container>
+  );
+}

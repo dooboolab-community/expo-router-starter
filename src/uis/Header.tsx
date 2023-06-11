@@ -1,27 +1,28 @@
-import {Icon, useTheme} from 'dooboo-ui';
-import {useRouter} from 'expo-router';
-import {StatusBar} from 'expo-status-bar';
 import type {ReactElement} from 'react';
-import {SafeAreaView, TouchableOpacity} from 'react-native';
+import {css} from '@emotion/native';
+import {Icon} from 'dooboo-ui';
+import CustomPressable from 'dooboo-ui/uis/CustomPressable';
+import {useRouter} from 'expo-router';
 
-function Header(): ReactElement {
-  const router = useRouter();
-  const {theme} = useTheme();
+import {delayPressIn} from '../utils/constants';
+
+export default function HeaderBack(): ReactElement | null {
+  const {back} = useRouter();
 
   return (
-    <SafeAreaView
-      style={{
-        backgroundColor: theme.bg.basic,
-        flexDirection: 'row',
-        alignItems: 'center',
-      }}
+    <CustomPressable
+      delayHoverIn={delayPressIn}
+      onPress={back}
+      style={[
+        css`
+          margin: 4px;
+          padding: 9px;
+          border-radius: 48px;
+        `,
+      ]}
+      hitSlop={{top: 8, left: 8, right: 8, bottom: 8}}
     >
-      <StatusBar />
-      <TouchableOpacity onPress={() => router.back()} style={{padding: 12}}>
-        <Icon name="chevron-left-light" size={18} />
-      </TouchableOpacity>
-    </SafeAreaView>
+      <Icon name="CaretLeft" size={20} />
+    </CustomPressable>
   );
 }
-
-export default Header;

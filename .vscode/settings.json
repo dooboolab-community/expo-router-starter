@@ -35,6 +35,9 @@
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true,
-    "**/node_modules": true
-  }
+  },
+  "cSpell.words": [
+    "Pressable",
+    "Pretendard"
+  ]
 }
