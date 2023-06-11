@@ -7653,9 +7653,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dooboo-ui@npm:0.2.6":
-  version: 0.2.6
-  resolution: "dooboo-ui@npm:0.2.6"
+"dooboo-ui@npm:0.2.6-rc.6":
+  version: 0.2.6-rc.6
+  resolution: "dooboo-ui@npm:0.2.6-rc.6"
   dependencies:
     "@dooboo-ui/theme": ^0.12.4
     dooboolab-welcome: ^1.3.2
@@ -7664,11 +7664,12 @@ __metadata:
   peerDependencies:
     "@emotion/native": ">=11.0.0"
     "@emotion/react": ">=11.0.0"
+    "@types/react-native-vector-icons": "*"
     react: ">=16.9"
     react-native: ">=0.58"
     react-native-gesture-handler: "*"
     react-native-vector-icons: "*"
-  checksum: 9d1c824ef147ebe3164ab7c3bb5acf428cd3d01ba789756c557d00214f217c3ae7de16351639173994ff90a3fc1ae8ca6ab128518a14dbfbb2bede04db79740b
+  checksum: a7054e2caa80d5a3c5785cfb1b7c53ea7924b6070d85df4f43d453c13229eaeca1903a91a6e1b67c141bf34b28143f643b39cbca0dcec3d06a86fd8d37426aee
   languageName: node
   linkType: hard
 
@@ -7706,7 +7707,7 @@ __metadata:
     babel-jest: ^29.5.0
     commitlint-plugin-function-rules: ^1.7.1
     date-fns: ^2.30.0
-    dooboo-ui: 0.2.6
+    dooboo-ui: 0.2.6-rc.6
     dotenv-cli: ^7.2.1
     eslint: ^8.42.0
     eslint-plugin-i18n-json: ^4.0.0
