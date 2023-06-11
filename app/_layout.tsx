@@ -28,7 +28,7 @@ export default function RootLayout(): ReactNode {
         : darkMode === 'true';
 
       SystemUI.setBackgroundColorAsync(
-        isDarkMode ? light.bg.paper : dark.bg.paper,
+        isDarkMode ? dark.bg.basic : light.bg.basic,
       );
 
       setLocalThemeType(isDarkMode ? 'dark' : 'light');
