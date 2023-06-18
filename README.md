@@ -1,5 +1,7 @@
 # Expo Starter with Router
 
+[![CI](https://github.com/dooboolab-community/expo-router-starter/actions/workflows/ci.yml/badge.svg)](https://github.com/dooboolab-community/expo-router-starter/actions/workflows/ci.yml)
+
 The `expo` template generated with `dooboo-cli`.
 
 We believe that the fastest way to build the app is using [Expo](https://expo.io).
