@@ -2,14 +2,10 @@ import type {ReactElement} from 'react';
 import styled from '@emotion/native';
 import {useDooboo} from 'dooboo-ui';
 import StatusBarBrightness from 'dooboo-ui/uis/StatusbarBrightness';
-import {SplashScreen, Stack} from 'expo-router';
+import {Stack} from 'expo-router';
 
 function Index(): React.ReactElement {
-  const {assetLoaded, theme} = useDooboo();
-
-  if (!assetLoaded) {
-    return <SplashScreen />;
-  }
+  const {theme} = useDooboo();
 
   return (
     <Stack

@@ -1,11 +1,11 @@
-import type {ReactElement} from 'react';
+import {type ReactElement, useEffect} from 'react';
 import styled, {css} from '@emotion/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Button, SwitchToggle, useDooboo} from 'dooboo-ui';
-import {Stack, useRouter} from 'expo-router';
+import {SplashScreen, Stack, useRouter} from 'expo-router';
 
-import {t} from '../../src/STRINGS';
-import {AsyncStorageKey} from '../../src/utils/constants';
+import {t} from '../src/STRINGS';
+import {AsyncStorageKey} from '../src/utils/constants';
 
 const Container = styled.View`
   background-color: ${({theme}) => theme.bg.basic};
@@ -26,6 +26,18 @@ const Content = styled.View`
 export default function Home(): ReactElement {
   const {themeType, changeThemeType} = useDooboo();
   const {push} = useRouter();
+
+  const {assetLoaded} = useDooboo();
+
+  useEffect(() => {
+    if (assetLoaded) {
+      SplashScreen.hideAsync();
+    }
+  }, [assetLoaded]);
+
+  if (!assetLoaded) {
+    return null;
+  }
 
   return (
     <Container>

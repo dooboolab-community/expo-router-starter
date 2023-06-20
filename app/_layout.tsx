@@ -12,6 +12,8 @@ import * as SystemUI from 'expo-system-ui';
 import RootProvider from '../src/providers';
 import {AsyncStorageKey} from '../src/utils/constants';
 
+SplashScreen.preventAutoHideAsync();
+
 export default function RootLayout(): ReactNode {
   const colorScheme = useColorScheme();
   const [localThemeType, setLocalThemeType] = useState<string | undefined>(
@@ -36,10 +38,6 @@ export default function RootLayout(): ReactNode {
 
     initializeThemeType();
   }, [colorScheme]);
-
-  if (!localThemeType) {
-    return <SplashScreen />;
-  }
 
   return (
     <RootProvider initialThemeType={localThemeType as ColorSchemeName}>
