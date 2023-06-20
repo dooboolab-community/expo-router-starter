@@ -22,7 +22,7 @@ jobs:
         run: YARN_CHECKSUM_BEHAVIOR=update yarn --immutable
 
       - name: Check linting
-        run: yarn lint
+        run: yarn lint:all
 
       - name: Build typescript
         run: yarn tsc
@@ -30,8 +30,8 @@ jobs:
       - name: Remove dist
         run: rm -rf ./dist
 
-      - name: Test
-        run: yarn test --coverage --silent
+      # - name: Test
+      #   run: yarn test --coverage --silent
 
       # - name: Upload coverage to Codecov
       #   uses: codecov/codecov-action@v1

@@ -68,3 +68,4 @@ web-build/
 !.yarn/releases
 
 .env
+.jest

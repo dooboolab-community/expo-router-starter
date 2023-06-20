@@ -4,8 +4,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Button, SwitchToggle, useDooboo} from 'dooboo-ui';
 import {SplashScreen, Stack, useRouter} from 'expo-router';
 
-import {t} from '../src/STRINGS';
-import {AsyncStorageKey} from '../src/utils/constants';
+import {t} from '../../src/STRINGS';
+import {AsyncStorageKey} from '../../src/utils/constants';
 
 const Container = styled.View`
   background-color: ${({theme}) => theme.bg.basic};

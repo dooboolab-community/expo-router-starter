@@ -9,15 +9,24 @@ module.exports = {
   rules: {
     'eslint-comments/no-unlimited-disable': 0,
     'eslint-comments/no-unused-disable': 0,
-    'i18n-json/identical-keys': [2, {
-      filePath: path.resolve('./assets/langs/ko.json')
-    }],
-    'i18n-json/sorted-keys': [2, {
-      order: 'asc',
-      indentSpaces: 2,
-    }],
-    'i18n-json/valid-message-syntax': [2, {
-      syntax: path.resolve('./custom-syntax-validator.js'),
-    }],
+    'i18n-json/identical-keys': [
+      2,
+      {
+        filePath: path.resolve('./assets/langs/ko.json'),
+      },
+    ],
+    'i18n-json/sorted-keys': [
+      2,
+      {
+        order: 'asc',
+        indentSpaces: 2,
+      },
+    ],
+    'i18n-json/valid-message-syntax': [
+      2,
+      {
+        syntax: path.resolve('./custom-syntax-validator.ts'),
+      },
+    ],
   },
 };

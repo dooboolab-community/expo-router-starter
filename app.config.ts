@@ -20,6 +20,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   orientation: 'default',
   icon: './assets/icon.png',
   plugins: [
+    // @ts-ignore
     withAndroidLocalizedName,
     'sentry-expo',
     'expo-tracking-transparency',

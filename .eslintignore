@@ -5,6 +5,3 @@ assets/langs/ios/
 
 # types
 *.d.ts
-
-# json
-*.json

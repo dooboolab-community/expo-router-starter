@@ -1,5 +1,5 @@
-import React from 'react';
 import type {ReactElement} from 'react';
+import React from 'react';
 import styled from '@emotion/native';
 import {Button} from 'dooboo-ui';
 
