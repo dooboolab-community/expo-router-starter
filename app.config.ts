@@ -23,6 +23,8 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     withAndroidLocalizedName,
     'sentry-expo',
     'expo-tracking-transparency',
+    '@react-native-firebase/app',
+    '@react-native-firebase/dynamic-links',
     'expo-localization',
     [
       'onesignal-expo-plugin',
@@ -54,7 +56,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     // requestHeaders: {'expo-channel-name': 'production'},
     // url: '',
   },
-  runtimeVersion: {policy: 'appVersion'},
+  runtimeVersion: '48.0.0',
   assetBundlePatterns: ['**/*'],
   userInterfaceStyle: 'automatic',
   locales: {
