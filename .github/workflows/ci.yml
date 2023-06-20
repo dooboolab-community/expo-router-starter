@@ -30,8 +30,8 @@ jobs:
       - name: Remove dist
         run: rm -rf ./dist
 
-      # - name: Test
-      #   run: yarn test --coverage --silent
+      - name: Test
+        run: yarn test --coverage --silent
 
       # - name: Upload coverage to Codecov
       #   uses: codecov/codecov-action@v1

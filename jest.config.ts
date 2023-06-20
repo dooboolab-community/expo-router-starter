@@ -17,9 +17,6 @@ export default async (): Promise<Config.InitialOptions> => {
     moduleDirectories: ['node_modules'],
     testMatch: ['**/__tests__/**/*.ts?(x)', '**/?(*.)+(spec|test).ts?(x)'],
     moduleFileExtensions: ['js', 'ts', 'tsx', 'svg', 'png', 'json'],
-    globals: {
-      'ts-jest': {tsconfig: 'tsconfig.spec.json'},
-    },
     modulePathIgnorePatterns: [
       '<rootDir>/build/',
       '<rootDir>/node_modules/',
@@ -30,13 +27,13 @@ export default async (): Promise<Config.InitialOptions> => {
       '.+\\.(css|style|less|sass|scss|png|jpg|ttf|woff|woff2)$': 'babel-jest',
     },
     setupFiles: [
-      '<rootDir>/test/jestSetup.ts',
+      '<rootDir>/test/testSetup.ts',
       './node_modules/react-native-gesture-handler/jestSetup.js',
     ],
     cacheDirectory: '.jest/cache',
     setupFilesAfterEnv: [
       '@testing-library/jest-native/extend-expect',
-      './test/testSetup.ts',
+      './test/testSetupAfterEnv.ts',
     ],
     haste: {
       defaultPlatform: 'ios',
