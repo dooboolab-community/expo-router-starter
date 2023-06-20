@@ -1912,8 +1912,8 @@ __metadata:
   linkType: hard
 
 "@dooboo-ui/theme@npm:^0.12.4":
-  version: 0.12.7
-  resolution: "@dooboo-ui/theme@npm:0.12.7"
+  version: 0.12.8
+  resolution: "@dooboo-ui/theme@npm:0.12.8"
   dependencies:
     "@expo/match-media": ^0.4.0
     react-responsive: ^9.0.0
@@ -1924,7 +1924,7 @@ __metadata:
     react: ">=16.9"
     react-native: ">=0.58"
     react-responsive: ">=9.0.0"
-  checksum: c222387f7941204ddd03a6aa81b4c43b515b2ea73d61c2faddfd0e2f10c90c7bb3bd7bdcf4b9ac3393c7d4838470eec191b39536a0ddb6c440ab727a3cd5b46d
+  checksum: 829f8ac87ab50208ede60e906dab099f3f352ab7cb2d8514c59b41ba5bf7794aae58b7eed62904297882bbb0fc5843f18dab017b661a8d8d49eb1e84ac2211b7
   languageName: node
   linkType: hard
 
@@ -3968,11 +3968,11 @@ __metadata:
   linkType: hard
 
 "@sinonjs/fake-timers@npm:^10.0.2":
-  version: 10.1.0
-  resolution: "@sinonjs/fake-timers@npm:10.1.0"
+  version: 10.3.0
+  resolution: "@sinonjs/fake-timers@npm:10.3.0"
   dependencies:
     "@sinonjs/commons": ^3.0.0
-  checksum: f8f7e23a136e32ba0128493207e4223f453e033471257a971acb43840927e738a0838004b1e4fa046279609762a2dd8d700606616e9264dc3891c4f8d45889a2
+  checksum: 614d30cb4d5201550c940945d44c9e0b6d64a888ff2cd5b357f95ad6721070d6b8839cd10e15b76bf5e14af0bcc1d8f9ec00d49a46318f1f669a4bec1d7f3148
   languageName: node
   linkType: hard
 
@@ -7680,9 +7680,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dooboo-ui@npm:0.2.7":
-  version: 0.2.7
-  resolution: "dooboo-ui@npm:0.2.7"
+"dooboo-ui@npm:0.2.8-rc.2":
+  version: 0.2.8-rc.2
+  resolution: "dooboo-ui@npm:0.2.8-rc.2"
   dependencies:
     "@dooboo-ui/theme": ^0.12.4
     dooboolab-welcome: ^1.3.2
@@ -7696,7 +7696,7 @@ __metadata:
     react-native: ">=0.58"
     react-native-gesture-handler: "*"
     react-native-vector-icons: "*"
-  checksum: 0282e9e6f30538a5f826435db546bd93d6e7af51fcb482261463d907a6fda9aea91775812add6651cedebc3413a3098547d641f6cfa43fde576684959dd881a0
+  checksum: 3953876bbb240b97e912f2d6c041f047f145b0ea76e563fec8e0791bb115db90647fa4b1fec7fdf95aa6571e8a91f8a7879985ff68ea48cb6c8137f11e290342
   languageName: node
   linkType: hard
 
@@ -7733,7 +7733,7 @@ __metadata:
     babel-jest: ^29.5.0
     commitlint-plugin-function-rules: ^2.0.0
     date-fns: ^2.30.0
-    dooboo-ui: 0.2.7
+    dooboo-ui: 0.2.8-rc.2
     dotenv-cli: ^7.2.1
     eslint: ^8.43.0
     eslint-plugin-i18n-json: ^4.0.0
@@ -7960,11 +7960,11 @@ __metadata:
   linkType: hard
 
 "envinfo@npm:^7.7.2":
-  version: 7.8.1
-  resolution: "envinfo@npm:7.8.1"
+  version: 7.9.0
+  resolution: "envinfo@npm:7.9.0"
   bin:
     envinfo: dist/cli.js
-  checksum: de736c98d6311c78523628ff127af138451b162e57af5293c1b984ca821d0aeb9c849537d2fde0434011bed33f6bca5310ca2aab8a51a3f28fc719e89045d648
+  checksum: 133583b07510309374b91c943f436c12cecc2d7b8520d65b699a80713773d130ccccb55fe6204d5b6a700b85357b6106d8d0dcf6ac24809cb44b24841e40543f
   languageName: node
   linkType: hard
 
