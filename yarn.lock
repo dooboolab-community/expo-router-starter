@@ -7680,7 +7680,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dooboo-ui@npm:next":
+"dooboo-ui@npm:0.2.8-rc.2":
   version: 0.2.8-rc.2
   resolution: "dooboo-ui@npm:0.2.8-rc.2"
   dependencies:
@@ -7733,7 +7733,7 @@ __metadata:
     babel-jest: ^29.5.0
     commitlint-plugin-function-rules: ^2.0.0
     date-fns: ^2.30.0
-    dooboo-ui: next
+    dooboo-ui: 0.2.8-rc.2
     dotenv-cli: ^7.2.1
     eslint: ^8.43.0
     eslint-plugin-i18n-json: ^4.0.0
