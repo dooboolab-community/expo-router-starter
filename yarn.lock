@@ -4371,6 +4371,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-native-vector-icons@npm:^6.4.13":
+  version: 6.4.13
+  resolution: "@types/react-native-vector-icons@npm:6.4.13"
+  dependencies:
+    "@types/react": "*"
+    "@types/react-native": ^0.70
+  checksum: e954807f7229a84ba6aa15c6952a987e0b45406e501131c0d73fdaa3fe634301d466e22eec8bb23d9c509eb39043fae9cad4ca685b125dc4d6d603dc46b789f7
+  languageName: node
+  linkType: hard
+
+"@types/react-native@npm:^0.70":
+  version: 0.70.14
+  resolution: "@types/react-native@npm:0.70.14"
+  dependencies:
+    "@types/react": "*"
+  checksum: 6df79ca70fe0643229dc23ad5121b4bdc80347a10ea8b352e89a97dda6e6f234c5a035e1d88debd3452f91964b95e7cc9a157105c9e09d93cadd28fd079394ba
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*":
   version: 18.2.13
   resolution: "@types/react@npm:18.2.13"
@@ -7708,6 +7727,7 @@ __metadata:
     "@types/i18n-js": ^3.8.4
     "@types/jest": ^29.5.2
     "@types/react": ~18.0.27
+    "@types/react-native-vector-icons": ^6.4.13
     "@types/recoil": ^0.0.9
     "@typescript-eslint/eslint-plugin": ^5.60.0
     babel-jest: ^29.5.0

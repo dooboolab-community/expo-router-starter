@@ -1,5 +1,5 @@
 import type {ReactElement} from 'react';
-import styled, {css} from '@emotion/native';
+import styled from '@emotion/native';
 import {Typography} from 'dooboo-ui';
 import {Stack} from 'expo-router';
 
