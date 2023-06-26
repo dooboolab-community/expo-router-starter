@@ -23,7 +23,7 @@ const Content = styled.View`
   align-items: center;
 `;
 
-export default function Home(): ReactElement {
+export default function Index(): ReactElement {
   const {themeType, changeThemeType} = useDooboo();
   const {push} = useRouter();
 

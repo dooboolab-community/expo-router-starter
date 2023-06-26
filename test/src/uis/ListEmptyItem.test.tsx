@@ -2,8 +2,8 @@ import * as React from 'react';
 import type {RenderAPI} from '@testing-library/react-native';
 import {render, waitFor} from '@testing-library/react-native';
 
-import {createTestElement, createTestProps} from '../../../test/testUtils';
-import Template from '../ListEmptyItem';
+import {createTestElement, createTestProps} from '../../testUtils';
+import Template from '../../../src/uis/ListEmptyItem';
 
 let props: any;
 let component: React.ReactElement;

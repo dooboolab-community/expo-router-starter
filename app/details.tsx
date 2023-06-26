@@ -1,5 +1,5 @@
 import type {ReactElement} from 'react';
-import styled, {css} from '@emotion/native';
+import styled from '@emotion/native';
 import {Typography} from 'dooboo-ui';
 import {Stack} from 'expo-router';
 
@@ -17,11 +17,7 @@ const Content = styled.View`
 
 export default function Details(): ReactElement {
   return (
-    <Container
-      style={css`
-        flex: 1;
-      `}
-    >
+    <Container>
       <Stack.Screen
         options={{
           title: t('DETAILS'),

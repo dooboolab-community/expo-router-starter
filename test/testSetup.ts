@@ -1,4 +1,4 @@
-// import {GlobalWithFetchMock} from 'jest-fetch-mock';
+import {GlobalWithFetchMock} from 'jest-fetch-mock';
 /**
  * monkey patching the locale to avoid the error:
  * Something went wrong initializing the native ReactLocalization module
@@ -6,8 +6,17 @@
  */
 import mockAsyncStorage from '@react-native-async-storage/async-storage/jest/async-storage-mock';
 
+const customGlobal: GlobalWithFetchMock = global as GlobalWithFetchMock &
+  // eslint-disable-next-line no-undef
+  typeof globalThis;
+
+customGlobal.fetch = require('jest-fetch-mock');
+customGlobal.fetchMock = customGlobal.fetch;
+
 global.__reanimatedWorkletInit = jest.fn();
 
+jest.mock('expo-router');
+jest.mock('@expo/react-native-action-sheet');
 jest.mock('expo-font');
 jest.mock('@react-native-async-storage/async-storage', () => mockAsyncStorage);
 jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');

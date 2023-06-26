@@ -13,7 +13,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   ...config,
   name: 'dooboo',
   scheme: 'dooboo',
-  slug: 'dooboo-expo-router',
+  slug: 'dooboo-slug',
   privacy: 'public',
   platforms: ['ios', 'android', 'web'],
   version,
@@ -32,6 +32,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
       {
         mode: 'development',
         smallIcons: ['./assets/ic_stat_onesignal_default.png'],
+        // https://developer.apple.com/account/#/membership
         // devTeam: '',
       },
     ],
@@ -90,19 +91,19 @@ export default ({config}: ConfigContext): ExpoConfig => ({
       foregroundImage: './assets/adaptive_icon.png',
       backgroundColor: '#2F2F2F',
     },
-    // package: 'com.dooboolab',
-    // intentFilters: [
-    //   {
-    //     action: 'VIEW',
-    //     autoVerify: true,
-    //     data: {
-    //       scheme: 'https',
-    //       host: DEEP_LINK_URL,
-    //       pathPrefix: '/',
-    //     },
-    //     category: ['BROWSABLE', 'DEFAULT'],
-    //   },
-    // ],
+    package: 'io.dooboo',
+    intentFilters: [
+      {
+        action: 'VIEW',
+        autoVerify: true,
+        data: {
+          scheme: 'https',
+          host: DEEP_LINK_URL,
+          pathPrefix: '/',
+        },
+        category: ['BROWSABLE', 'DEFAULT'],
+      },
+    ],
   },
   description: 'Starter project from dooboo-cli.',
   web: {bundler: 'metro'},
