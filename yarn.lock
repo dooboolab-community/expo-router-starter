@@ -6922,7 +6922,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-fetch@npm:^3.1.5":
+"cross-fetch@npm:^3.0.4, cross-fetch@npm:^3.1.5":
   version: 3.1.6
   resolution: "cross-fetch@npm:3.1.6"
   dependencies:
@@ -7680,29 +7680,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dooboo-ui@npm:0.2.8-rc.2":
-  version: 0.2.8-rc.2
-  resolution: "dooboo-ui@npm:0.2.8-rc.2"
-  dependencies:
-    "@dooboo-ui/theme": ^0.12.4
-    dooboolab-welcome: ^1.3.2
-    react-native-web-hooks: ^3.0.2
-    react-responsive: ^9.0.2
-  peerDependencies:
-    "@emotion/native": ">=11.0.0"
-    "@emotion/react": ">=11.0.0"
-    "@types/react-native-vector-icons": "*"
-    react: ">=16.9"
-    react-native: ">=0.58"
-    react-native-gesture-handler: "*"
-    react-native-vector-icons: "*"
-  checksum: 3953876bbb240b97e912f2d6c041f047f145b0ea76e563fec8e0791bb115db90647fa4b1fec7fdf95aa6571e8a91f8a7879985ff68ea48cb6c8137f11e290342
-  languageName: node
-  linkType: hard
-
-"dooboo@workspace:.":
+"dooboo-starter@workspace:.":
   version: 0.0.0-use.local
-  resolution: "dooboo@workspace:."
+  resolution: "dooboo-starter@workspace:."
   dependencies:
     "@babel/core": ^7.22.5
     "@babel/plugin-proposal-export-namespace-from": ^7.18.9
@@ -7762,6 +7742,7 @@ __metadata:
     i18n-js: ^4.2.3
     jest: ^29.5.0
     jest-expo: ^48.0.2
+    jest-fetch-mock: ^3.0.3
     lottie-react-native: 5.1.4
     onesignal-expo-plugin: ^1.3.2
     prettier: ^2.8.8
@@ -7790,6 +7771,26 @@ __metadata:
     typescript: ^4.9.4
   languageName: unknown
   linkType: soft
+
+"dooboo-ui@npm:0.2.8-rc.2":
+  version: 0.2.8-rc.2
+  resolution: "dooboo-ui@npm:0.2.8-rc.2"
+  dependencies:
+    "@dooboo-ui/theme": ^0.12.4
+    dooboolab-welcome: ^1.3.2
+    react-native-web-hooks: ^3.0.2
+    react-responsive: ^9.0.2
+  peerDependencies:
+    "@emotion/native": ">=11.0.0"
+    "@emotion/react": ">=11.0.0"
+    "@types/react-native-vector-icons": "*"
+    react: ">=16.9"
+    react-native: ">=0.58"
+    react-native-gesture-handler: "*"
+    react-native-vector-icons: "*"
+  checksum: 3953876bbb240b97e912f2d6c041f047f145b0ea76e563fec8e0791bb115db90647fa4b1fec7fdf95aa6571e8a91f8a7879985ff68ea48cb6c8137f11e290342
+  languageName: node
+  linkType: hard
 
 "dooboolab-welcome@npm:^1.3.2":
   version: 1.3.2
@@ -11519,6 +11520,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-fetch-mock@npm:^3.0.3":
+  version: 3.0.3
+  resolution: "jest-fetch-mock@npm:3.0.3"
+  dependencies:
+    cross-fetch: ^3.0.4
+    promise-polyfill: ^8.1.3
+  checksum: fb052f7e0ef1c8192a9c15efdd1b18d281ab68fc6b1648b30bff8880fe24418bdf12190ea79b1996932dc15417c3c01f5b2d77ef7104a7e7943e7cbe8d61071d
+  languageName: node
+  linkType: hard
+
 "jest-get-type@npm:^22.4.3":
   version: 22.4.3
   resolution: "jest-get-type@npm:22.4.3"
@@ -15097,6 +15108,13 @@ __metadata:
   version: 1.0.1
   resolution: "promise-inflight@npm:1.0.1"
   checksum: 22749483091d2c594261517f4f80e05226d4d5ecc1fc917e1886929da56e22b5718b7f2a75f3807e7a7d471bc3be2907fe92e6e8f373ddf5c64bae35b5af3981
+  languageName: node
+  linkType: hard
+
+"promise-polyfill@npm:^8.1.3":
+  version: 8.3.0
+  resolution: "promise-polyfill@npm:8.3.0"
+  checksum: 206373802076c77def0805758d0a8ece64120dfa6603f092404a1004211f8f2f67f33cadbc35953fc2a8ed0b0d38c774e88bdf01e20ce7a920723a60df84b7a5
   languageName: node
   linkType: hard
 

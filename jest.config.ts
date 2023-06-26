@@ -4,7 +4,9 @@ process.env.TZ = 'Asia/Seoul';
 
 export default async (): Promise<Config.InitialOptions> => {
   return {
+    // https://github.com/jefflau/jest-fetch-mock#to-setup-for-all-tests
     automock: false,
+    resetMocks: false,
     preset: 'jest-expo',
     transform: {
       '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
