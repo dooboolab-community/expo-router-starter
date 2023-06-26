@@ -8,6 +8,8 @@ import mockAsyncStorage from '@react-native-async-storage/async-storage/jest/asy
 
 global.__reanimatedWorkletInit = jest.fn();
 
+jest.mock('expo-router');
+jest.mock('@expo/react-native-action-sheet');
 jest.mock('expo-font');
 jest.mock('@react-native-async-storage/async-storage', () => mockAsyncStorage);
 jest.mock('react-native/Libraries/EventEmitter/NativeEventEmitter');

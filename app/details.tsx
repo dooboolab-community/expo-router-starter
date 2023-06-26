@@ -17,11 +17,7 @@ const Content = styled.View`
 
 export default function Details(): ReactElement {
   return (
-    <Container
-      style={css`
-        flex: 1;
-      `}
-    >
+    <Container>
       <Stack.Screen
         options={{
           title: t('DETAILS'),
