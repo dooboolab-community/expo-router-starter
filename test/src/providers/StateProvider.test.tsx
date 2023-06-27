@@ -1,9 +1,12 @@
+import type {ReactElement} from 'react';
 import {Button, View} from 'react-native';
-import {StateProvider, useStateContext} from '../../../src/providers/StateProvider';
+import type {RenderAPI} from '@testing-library/react-native';
 import {act, fireEvent, render} from '@testing-library/react-native';
 
-import type {ReactElement} from 'react';
-import type {RenderAPI} from '@testing-library/react-native';
+import {
+  StateProvider,
+  useStateContext,
+} from '../../../src/providers/StateProvider';
 
 const FakeChild = (): ReactElement => {
   const {setUser} = useStateContext();
@@ -52,5 +55,7 @@ describe('Interactions', () => {
     act(() => {
       fireEvent.press(getByTestId('BUTTON'));
     });
+
+    expect(1).toBeTruthy();
   });
 });

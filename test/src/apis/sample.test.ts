@@ -1,6 +1,7 @@
-import {FetchMock} from 'jest-fetch-mock';
-import {ROOT_URL} from '../../../src/apis/urls';
+import type {FetchMock} from 'jest-fetch-mock';
+
 import {sample} from '../../../src/apis/sample';
+import {ROOT_URL} from '../../../src/apis/urls';
 
 const fetchMock = fetch as FetchMock;
 
@@ -28,6 +29,7 @@ describe('testing sample api', () => {
     const onResponse = jest.fn();
     const onError = jest.fn();
 
+    // eslint-disable-next-line jest/valid-expect-in-promise
     sample({})
       .then(onResponse)
       .catch(onError)

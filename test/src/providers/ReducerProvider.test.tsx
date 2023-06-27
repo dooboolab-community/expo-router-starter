@@ -1,8 +1,12 @@
-import {Button, Text, View} from 'react-native';
-import {ReducerProvider, useReducerContext} from '../../../src/providers/ReducerProvider';
-import {RenderAPI, render} from '@testing-library/react-native';
-
 import type {ReactElement} from 'react';
+import {Button, Text, View} from 'react-native';
+import type {RenderAPI} from '@testing-library/react-native';
+import {render} from '@testing-library/react-native';
+
+import {
+  ReducerProvider,
+  useReducerContext,
+} from '../../../src/providers/ReducerProvider';
 
 const FakeChild = (): ReactElement => {
   const {state, setUser} = useReducerContext();
