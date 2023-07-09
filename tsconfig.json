@@ -7,7 +7,10 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "jsx": "react-jsx",
-    "lib": ["es2017", "dom"],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "module": "es2015",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -44,7 +47,7 @@
           ]
         }
       }
-    ],
+    ]
   },
   "include": [
     "app/**/*.ts",
@@ -54,7 +57,9 @@
     "**/*.test.tsx",
     "**/*.spec.ts"
   ],
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules"
+  ],
   "jest": {
     "globals": {
       "ts-jest": {

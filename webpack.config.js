@@ -56,5 +56,8 @@ module.exports = async (env, argv) => {
     }
   });
 
+  // https://github.com/thysultan/stylis/issues/254
+  config.module.rules.push({test: /\.mjs$/, type: 'javascript/auto'});
+
   return config;
 };

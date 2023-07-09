@@ -22,6 +22,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   plugins: [
     // @ts-ignore
     withAndroidLocalizedName,
+    'expo-router',
     'sentry-expo',
     'expo-tracking-transparency',
     '@react-native-firebase/app',
