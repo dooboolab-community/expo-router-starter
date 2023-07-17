@@ -7,7 +7,7 @@ import {version} from './package.json';
 
 const DEEP_LINK_URL = '[firebaseAppId].web.app';
 
-const buildNumber = 63;
+const buildNumber = 1;
 
 export default ({config}: ConfigContext): ExpoConfig => ({
   ...config,
