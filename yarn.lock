@@ -1911,12 +1911,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dooboo-ui/theme@npm:^0.12.4":
-  version: 0.12.9
-  resolution: "@dooboo-ui/theme@npm:0.12.9"
+"@dooboo-ui/theme@npm:^0.12.14":
+  version: 0.12.14
+  resolution: "@dooboo-ui/theme@npm:0.12.14"
   dependencies:
     "@expo/match-media": ^0.4.0
-    react-responsive: ^9.0.0
+    react-responsive: ^9.0.2
   peerDependencies:
     "@emotion/native": ">=11"
     "@emotion/react": ">=11"
@@ -1924,7 +1924,7 @@ __metadata:
     react: ">=16.9"
     react-native: ">=0.58"
     react-responsive: ">=9.0.0"
-  checksum: dcde753fd97017cea19d4bd617743d910ef1c8d386deade8bf2b2a9097fb0c180a1d60a92a7a5140b1438c67e7637e5a6e3e0568582d56036b303255729ab480
+  checksum: 75210815b55632cbfb129fa4822c7f49f69c990238b3f49ae7d7ec8f0c8184f8dd7b037c527114af5d0b8b939673040f697b79299ec22ded558b1d4b194cba05
   languageName: node
   linkType: hard
 
@@ -7783,7 +7783,7 @@ __metadata:
     babel-jest: ^29.5.0
     commitlint-plugin-function-rules: ^2.0.2
     date-fns: ^2.30.0
-    dooboo-ui: 0.2.8
+    dooboo-ui: ^0.2.16
     dotenv-cli: ^7.2.1
     eslint: ^8.43.0
     eslint-plugin-i18n-json: ^4.0.0
@@ -7842,23 +7842,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"dooboo-ui@npm:0.2.8":
-  version: 0.2.8
-  resolution: "dooboo-ui@npm:0.2.8"
+"dooboo-ui@npm:^0.2.16":
+  version: 0.2.16
+  resolution: "dooboo-ui@npm:0.2.16"
   dependencies:
-    "@dooboo-ui/theme": ^0.12.4
+    "@dooboo-ui/theme": ^0.12.14
     dooboolab-welcome: ^1.3.2
     react-native-web-hooks: ^3.0.2
     react-responsive: ^9.0.2
   peerDependencies:
     "@emotion/native": ">=11.0.0"
     "@emotion/react": ">=11.0.0"
-    "@types/react-native-vector-icons": "*"
+    "@expo/vector-icons": "*"
     react: ">=16.9"
     react-native: ">=0.58"
     react-native-gesture-handler: "*"
-    react-native-vector-icons: "*"
-  checksum: 5a650dafd95a8d02cfab54126d7827a8452ae733c1e1f3148d3f994812e0bc51be6067e5b5934e24ddf2892ecc925e432874d899bbb0e40f556df9d3c22e7c72
+  checksum: a6a1dd56879170ce70286c836510cef145a2ac3a7417d55119acad17e647a5107d6d4852c7a3a1b78eb4840b16750efbaa0799c28186a5fc79eb0fc68c69479e
   languageName: node
   linkType: hard
 
@@ -15809,7 +15808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-responsive@npm:^9.0.0, react-responsive@npm:^9.0.2":
+"react-responsive@npm:^9.0.2":
   version: 9.0.2
   resolution: "react-responsive@npm:9.0.2"
   dependencies:
