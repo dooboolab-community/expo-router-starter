@@ -1955,7 +1955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dooboo-ui/theme@npm:^0.12.4":
+"@dooboo-ui/theme@npm:^0.12.14":
   version: 0.12.14
   resolution: "@dooboo-ui/theme@npm:0.12.14"
   dependencies:
