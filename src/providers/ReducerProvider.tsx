@@ -1,4 +1,3 @@
-import type {ReactElement} from 'react';
 import {useReducer} from 'react';
 
 import createCtx from '../utils/createCtx';
@@ -40,7 +39,7 @@ interface SetUserAction {
 type Action = SetUserAction;
 
 interface Props {
-  children?: React.ReactElement;
+  children?: JSX.Element;
 }
 
 type Reducer = (state: State, action: Action) => State;
@@ -70,7 +69,7 @@ const reducer: Reducer = (state = initialState, action) => {
   }
 };
 
-function ReducerProvider(props: Props): ReactElement {
+function ReducerProvider(props: Props): JSX.Element {
   const [state, dispatch] = useReducer<Reducer>(reducer, initialState);
 
   const actions = {

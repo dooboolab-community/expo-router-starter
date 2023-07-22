@@ -1,4 +1,3 @@
-import type {ReactElement} from 'react';
 import styled from '@emotion/native';
 import {Typography} from 'dooboo-ui';
 import {Stack} from 'expo-router';
@@ -15,7 +14,7 @@ const Content = styled.View`
   padding: 16px;
 `;
 
-export default function Details(): ReactElement {
+export default function Details(): JSX.Element {
   return (
     <Container>
       <Stack.Screen

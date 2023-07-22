@@ -1,4 +1,3 @@
-import {type ReactElement} from 'react';
 import styled, {css} from '@emotion/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Button, SwitchToggle, useDooboo} from 'dooboo-ui';
@@ -23,7 +22,7 @@ const Content = styled.View`
   align-items: center;
 `;
 
-export default function Index(): ReactElement {
+export default function Index(): JSX.Element {
   const {themeType, changeThemeType} = useDooboo();
   const {push} = useRouter();
 

@@ -1,4 +1,3 @@
-import type {ReactElement} from 'react';
 import ErrorBoundary from 'react-native-error-boundary';
 import FallbackComponent from 'react-native-error-boundary/lib/ErrorBoundary/FallbackComponent';
 import {ActionSheetProvider} from '@expo/react-native-action-sheet';
@@ -11,10 +10,10 @@ import {handleErrorConsole} from '../utils/error';
 
 interface Props {
   initialThemeType?: ThemeType;
-  children?: ReactElement;
+  children?: JSX.Element;
 }
 
-const RootProvider = ({initialThemeType, children}: Props): ReactElement => {
+const RootProvider = ({initialThemeType, children}: Props): JSX.Element => {
   return (
     <RecoilRoot>
       <DoobooProvider

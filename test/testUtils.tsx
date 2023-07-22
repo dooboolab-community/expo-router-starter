@@ -1,4 +1,4 @@
-import type {FC, ReactElement} from 'react';
+import type {FC} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import type {ThemeType} from 'dooboo-ui';
 import type * as Device from 'expo-device';
@@ -11,10 +11,10 @@ type MockContext = {
 };
 
 export const createTestElement = (
-  child: ReactElement,
+  child: JSX.Element,
   mockContext?: MockContext,
   themeType?: ThemeType,
-): ReactElement => (
+): JSX.Element => (
   <RootProvider initialThemeType={themeType}>{child}</RootProvider>
 );
 
@@ -67,7 +67,7 @@ export function createMockNavigation(): any {
   };
 }
 
-export const TestSafeAreaProvider: FC<{children: ReactElement}> = ({
+export const TestSafeAreaProvider: FC<{children: JSX.Element}> = ({
   children,
 }) => {
   return (

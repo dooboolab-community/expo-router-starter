@@ -1,4 +1,3 @@
-import type {ReactElement, ReactNode} from 'react';
 import {useEffect, useState} from 'react';
 import type {ColorSchemeName} from 'react-native';
 import {useColorScheme} from 'react-native';
@@ -16,7 +15,7 @@ import {AsyncStorageKey} from '../src/utils/constants';
 
 SplashScreen.preventAutoHideAsync();
 
-function Layout(): ReactElement | null {
+function Layout(): JSX.Element | null {
   const {assetLoaded, theme} = useDooboo();
 
   useEffect(() => {
@@ -47,7 +46,7 @@ function Layout(): ReactElement | null {
   );
 }
 
-export default function RootLayout(): ReactNode {
+export default function RootLayout(): JSX.Element | null {
   const colorScheme = useColorScheme();
   const [localThemeType, setLocalThemeType] = useState<string | undefined>(
     undefined,
