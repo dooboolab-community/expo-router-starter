@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Button, SwitchToggle, useDooboo} from 'dooboo-ui';
 import {Stack, useRouter} from 'expo-router';
 
+import {ROOT_URL} from '../config';
 import {t} from '../src/STRINGS';
 import {AsyncStorageKey} from '../src/utils/constants';
 
@@ -25,6 +26,8 @@ const Content = styled.View`
 export default function Index(): JSX.Element {
   const {themeType, changeThemeType} = useDooboo();
   const {push} = useRouter();
+
+  console.log('ROOT_URL', ROOT_URL);
 
   return (
     <Container>

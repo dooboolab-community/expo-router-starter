@@ -1,4 +1,4 @@
-import {ROOT_URL} from './urls';
+import {ROOT_URL} from '../../config';
 
 export const sample = async (
   body: Record<string, unknown>,
