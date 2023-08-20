@@ -1,12 +1,12 @@
 {
   "recommendations": [
-    "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "wix.vscode-import-cost",
-    "aaron-bond.better-comments",
-    "styled-components.vscode-styled-components",
-    "vscode-icons-team.vscode-icons",
     "formulahendry.auto-rename-tag",
-    "streetsidesoftware.code-spell-checker"
+    "aaron-bond.better-comments",
+    "vscode-icons-team.vscode-icons",
+    "streetsidesoftware.code-spell-checker",
+    "wix.vscode-import-cost",
+    "styled-components.vscode-styled-components",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
   ]
 }
