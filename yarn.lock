@@ -1928,9 +1928,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dooboo/eslint-config-react-native@npm:^1.4.1":
-  version: 1.4.1
-  resolution: "@dooboo/eslint-config-react-native@npm:1.4.1"
+"@dooboo/eslint-config-react-native@npm:^1.4.2":
+  version: 1.4.2
+  resolution: "@dooboo/eslint-config-react-native@npm:1.4.2"
   dependencies:
     "@react-native/eslint-config": latest
     "@typescript-eslint/eslint-plugin": latest
@@ -1943,7 +1943,7 @@ __metadata:
     eslint: ">=7"
     eslint-plugin-jest: "*"
     prettier: "*"
-  checksum: 30b3128564e5f2806294cd740dfb44e5c90fa75ff09dcfaa093fac02249ea087d71d75f5179827a9c2a124771189db4bf6a9186012148a58b53726a440c3da25
+  checksum: 4ead142370c075fda7b2e3ac32e7695d21c666a12efbc905fa7b5dc26a63ee0ccadd50b9d5ab8e688b020fda5bef382541c5ae7db8f40077ceb021a41c491dd5
   languageName: node
   linkType: hard
 
@@ -7995,7 +7995,7 @@ __metadata:
     "@babel/plugin-proposal-export-namespace-from": ^7.18.9
     "@commitlint/cli": ^17.6.6
     "@commitlint/config-conventional": ^17.6.6
-    "@dooboo/eslint-config-react-native": ^1.4.1
+    "@dooboo/eslint-config-react-native": ^1.4.2
     "@emotion/native": ^11.11.0
     "@emotion/react": ^11.11.1
     "@expo/match-media": ^0.4.0

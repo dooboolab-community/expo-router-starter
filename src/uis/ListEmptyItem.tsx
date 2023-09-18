@@ -19,7 +19,7 @@ function Component({style}: {style?: ViewStyle}): JSX.Element {
         style,
       ]}
     >
-      <Icon name="QuestBoxFill" size={14} color={theme.text.disabled} />
+      <Icon color={theme.text.disabled} name="QuestBoxFill" size={14} />
     </Container>
   );
 }
