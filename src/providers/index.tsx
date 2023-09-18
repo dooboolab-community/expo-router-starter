@@ -13,7 +13,7 @@ interface Props {
   children?: JSX.Element;
 }
 
-const RootProvider = ({initialThemeType, children}: Props): JSX.Element => {
+function RootProvider({initialThemeType, children}: Props): JSX.Element {
   return (
     <RecoilRoot>
       <DoobooProvider
@@ -23,14 +23,14 @@ const RootProvider = ({initialThemeType, children}: Props): JSX.Element => {
         }}
       >
         <ErrorBoundary
-          onError={handleErrorConsole}
           FallbackComponent={FallbackComponent}
+          onError={handleErrorConsole}
         >
           <ActionSheetProvider>{children}</ActionSheetProvider>
         </ErrorBoundary>
       </DoobooProvider>
     </RecoilRoot>
   );
-};
+}
 
 export default RootProvider;

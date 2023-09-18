@@ -7,24 +7,24 @@ import {
   useReducerContext,
 } from '../../../src/providers/ReducerProvider';
 
-const FakeChild = (): JSX.Element => {
+function FakeChild(): JSX.Element {
   const {state, setUser} = useReducerContext();
 
   return (
     <View>
       <Text testID="TEXT">{JSON.stringify(state, null, 2)}</Text>
       <Button
-        testID="BUTTON"
         onPress={(): void => {
           setUser({
             displayName: 'test',
           });
         }}
+        testID="BUTTON"
         title="Button"
       />
     </View>
   );
-};
+}
 
 describe('[ReducerProvider] rendering test', () => {
   const component = (

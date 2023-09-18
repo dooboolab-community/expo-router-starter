@@ -46,6 +46,7 @@ export default function Index(): JSX.Element {
           }}
         />
         <Button
+          onPress={() => push('/details')}
           style={css`
             margin-top: 28px;
             margin-bottom: 40px;
@@ -56,7 +57,6 @@ export default function Index(): JSX.Element {
             `,
           }}
           text={t('SEE_DETAILS')}
-          onPress={() => push('/details')}
         />
       </Content>
     </Container>

@@ -1,4 +1,3 @@
-import type {FC} from 'react';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import type {ThemeType} from 'dooboo-ui';
 import type * as Device from 'expo-device';
@@ -67,9 +66,11 @@ export function createMockNavigation(): any {
   };
 }
 
-export const TestSafeAreaProvider: FC<{children: JSX.Element}> = ({
+export function TestSafeAreaProvider({
   children,
-}) => {
+}: {
+  children: JSX.Element;
+}): JSX.Element {
   return (
     <SafeAreaProvider
       initialMetrics={{
@@ -80,4 +81,4 @@ export const TestSafeAreaProvider: FC<{children: JSX.Element}> = ({
       {children}
     </SafeAreaProvider>
   );
-};
+}

@@ -69,14 +69,14 @@ const reducer: Reducer = (state = initialState, action) => {
   }
 };
 
-function ReducerProvider(props: Props): JSX.Element {
+function ReducerProvider({children}: Props): JSX.Element {
   const [state, dispatch] = useReducer<Reducer>(reducer, initialState);
 
   const actions = {
     setUser: setUser(dispatch),
   };
 
-  return <Provider value={{state, ...actions}}>{props.children}</Provider>;
+  return <Provider value={{state, ...actions}}>{children}</Provider>;
 }
 
 export {useCtx as useReducerContext, ReducerProvider};

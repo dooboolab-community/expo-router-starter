@@ -78,7 +78,7 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
-    "@dooboo/eslint-config-react-native": "^1.4.1",
+    "@dooboo/eslint-config-react-native": "^1.4.2",
     "@mmomtchev/expo-android-localized-app-name": "^1.0.1",
     "@testing-library/jest-native": "^5.4.2",
     "@testing-library/react-native": "^12.1.2",

@@ -7,13 +7,12 @@ import {
   useStateContext,
 } from '../../../src/providers/StateProvider';
 
-const FakeChild = (): JSX.Element => {
+function FakeChild(): JSX.Element {
   const {setUser} = useStateContext();
 
   return (
     <View>
       <Button
-        testID="BUTTON"
         onPress={(): void =>
           setUser({
             displayName: 'displayName',
@@ -21,11 +20,12 @@ const FakeChild = (): JSX.Element => {
             job: 'dev',
           })
         }
+        testID="BUTTON"
         title="Button"
       />
     </View>
   );
-};
+}
 
 describe('Rendering', () => {
   const component = (
