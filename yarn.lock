@@ -2859,9 +2859,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/webpack-config@npm:^18.1.2":
-  version: 18.1.2
-  resolution: "@expo/webpack-config@npm:18.1.2"
+"@expo/webpack-config@npm:^19.0.0":
+  version: 19.0.0
+  resolution: "@expo/webpack-config@npm:19.0.0"
   dependencies:
     "@babel/core": ^7.20.2
     babel-loader: ^8.3.0
@@ -2870,7 +2870,7 @@ __metadata:
     copy-webpack-plugin: ^10.2.0
     css-loader: ^6.5.1
     css-minimizer-webpack-plugin: ^3.4.1
-    expo-pwa: 0.0.126
+    expo-pwa: 0.0.127
     find-up: ^5.0.0
     find-yarn-workspace-root: ~2.0.0
     getenv: ^1.0.0
@@ -2886,8 +2886,8 @@ __metadata:
     webpack-dev-server: ^4.11.1
     webpack-manifest-plugin: ^4.1.1
   peerDependencies:
-    expo: ^48.0.17
-  checksum: 23200b62c699d9d2537c922a1d88be9301a53dd3eb043f94383118f64874da2ba1607b5fa5281d4b2fd2b05fd33fac5b11deb6f2704c7ddfd5133af56a9cd007
+    expo: ^49.0.7
+  checksum: 2dd052849553952d9c1b0ddc2443bbf0b9454603e43ff467d3c4871b75ed1d1ed566f495d748fedb37c50f5722718f859c98f811552356b550505e3e8295cf95
   languageName: node
   linkType: hard
 
@@ -8059,7 +8059,7 @@ __metadata:
     "@expo/metro-config": ^0.11.1
     "@expo/react-native-action-sheet": ^4.0.1
     "@expo/vector-icons": ^13.0.0
-    "@expo/webpack-config": ^18.1.2
+    "@expo/webpack-config": ^19.0.0
     "@mmomtchev/expo-android-localized-app-name": ^1.0.1
     "@react-native-async-storage/async-storage": 1.18.2
     "@react-native-community/datetimepicker": 7.2.0
@@ -8080,7 +8080,7 @@ __metadata:
     babel-jest: ^29.6.3
     commitlint-plugin-function-rules: ^2.0.2
     date-fns: ^2.30.0
-    dooboo-ui: ^0.2.17
+    dooboo-ui: ^0.2.21
     dotenv-cli: ^7.3.0
     eslint: ^8.47.0
     eslint-plugin-i18n-json: ^4.0.0
@@ -8093,7 +8093,7 @@ __metadata:
     expo-constants: ~14.4.2
     expo-device: ~5.4.0
     expo-font: ~11.4.0
-    expo-image: ~1.3.2
+    expo-image: ~1.3.3
     expo-image-picker: ~14.3.2
     expo-linear-gradient: ~12.3.0
     expo-linking: ~5.0.2
@@ -8106,9 +8106,9 @@ __metadata:
     expo-status-bar: ~1.6.0
     expo-system-ui: ~2.4.0
     expo-tracking-transparency: ~3.1.0
-    expo-updates: ~0.18.11
+    expo-updates: ~0.18.13
     expo-web-browser: ~12.3.2
-    i18n-js: 4.3.0
+    i18n-js: 4.2.2
     jest: ^29.2.1
     jest-expo: ~49.0.0
     jest-fetch-mock: ^3.0.3
@@ -8141,9 +8141,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"dooboo-ui@npm:^0.2.17":
-  version: 0.2.17
-  resolution: "dooboo-ui@npm:0.2.17"
+"dooboo-ui@npm:^0.2.21":
+  version: 0.2.21
+  resolution: "dooboo-ui@npm:0.2.21"
   dependencies:
     "@dooboo-ui/theme": ^0.12.14
     dooboolab-welcome: ^1.3.2
@@ -8156,7 +8156,7 @@ __metadata:
     react: ">=16.9"
     react-native: ">=0.58"
     react-native-gesture-handler: "*"
-  checksum: 97e5d5693780b65e617cc2f73a3f127dac0bac1dd966570b0d0491d0cb1f17c1a6e25f0f70bbeea1d9ccf678526bb24768e6771079f5f6068ebe5a218d2f2a60
+  checksum: 7fbb6aa29ab38e1eba1d84f020a272a864e94f1f60c5645cb84cd73fc74cf7a356c00f744389fcc80e49421d668bd21ef9e82ad3581ea6b6f400420de6790759
   languageName: node
   linkType: hard
 
@@ -9209,12 +9209,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-image@npm:~1.3.2":
-  version: 1.3.2
-  resolution: "expo-image@npm:1.3.2"
+"expo-image@npm:~1.3.3":
+  version: 1.3.3
+  resolution: "expo-image@npm:1.3.3"
   peerDependencies:
     expo: "*"
-  checksum: 848cfe17b7d2051c87064c1fb0b646af1d91bf906299e0c8fc3772111cf81d0b2756a27877ef9350aee31a11adf3bf17aa37d71363409eb70e2e8831e255ed7f
+  checksum: ebbbe451a53ba5e55e43dbbc0afeff1c2ed82be565b52474ed7544d3e8b78e98723f077a8b53611e703c7198a073f436bbabd9e06beacd5512d9e7ad6049ec7e
   languageName: node
   linkType: hard
 
@@ -9321,9 +9321,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-pwa@npm:0.0.126":
-  version: 0.0.126
-  resolution: "expo-pwa@npm:0.0.126"
+"expo-pwa@npm:0.0.127":
+  version: 0.0.127
+  resolution: "expo-pwa@npm:0.0.127"
   dependencies:
     "@expo/image-utils": 0.3.23
     chalk: ^4.0.0
@@ -9333,7 +9333,7 @@ __metadata:
     expo: "*"
   bin:
     expo-pwa: build/cli.js
-  checksum: 6a0de8082649913ce23e1015c786bd68218ce5e5ce58dc99d808a820055907a5ab871574fc50b3b802b3d1933749c76971be92145f4a8a178f440b693868b83c
+  checksum: d9fd7bd6d875342caf7eb4a0b893928301b507a4d26830722c56f96e2a973be852bc8ec77a277dde8bc166e95b7c09c58e3014fb8849ba125289f55bd01e39f8
   languageName: node
   linkType: hard
 
@@ -9448,9 +9448,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expo-updates@npm:~0.18.11":
-  version: 0.18.11
-  resolution: "expo-updates@npm:0.18.11"
+"expo-updates@npm:~0.18.13":
+  version: 0.18.13
+  resolution: "expo-updates@npm:0.18.13"
   dependencies:
     "@expo/code-signing-certificates": 0.0.5
     "@expo/config": ~8.1.0
@@ -9467,7 +9467,7 @@ __metadata:
     expo: "*"
   bin:
     expo-updates: bin/cli.js
-  checksum: 0c01e7d0c9aca8c289255eb0e987ac0e3ff34bf2d294d5229a812cbd00cd0c732e2cc318646dbf4d7789d6ca3e7f35aa678b1e894c45187a2d37e3b74b5ad2f9
+  checksum: 1b98a46f832688d02e163660266a057614a13c19515fefe51531fe1bb84e451229e7cbad0f7da1110158bd29c59b84ba526bd80d72c06747d8ccfaab3d36864c
   languageName: node
   linkType: hard
 
@@ -10755,13 +10755,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18n-js@npm:4.3.0":
-  version: 4.3.0
-  resolution: "i18n-js@npm:4.3.0"
+"i18n-js@npm:4.2.2":
+  version: 4.2.2
+  resolution: "i18n-js@npm:4.2.2"
   dependencies:
     bignumber.js: "*"
-    make-plural: "*"
-  checksum: 085f6f55b4ec87d326f96ea8664417c9305f7b0a7519073a2d23bca4b8da595c014ffa13c522e90b0ce1e0b5b3d04f4e23920732829a0a1837b1486a0a14aee2
+    lodash: "*"
+  checksum: 288968783c4455caa4f1041e41be521731a04fb0b7e02c4b5fddd7538baa5621ae96ec4ee0f6151d417593a95f502ea5809165880c9ea5d246f228b79c2872ca
   languageName: node
   linkType: hard
 
@@ -12882,7 +12882,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.13, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.17.4":
+"lodash@npm:*, lodash@npm:^4.17.13, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.20, lodash@npm:^4.17.21, lodash@npm:^4.17.4":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -13053,13 +13053,6 @@ __metadata:
     socks-proxy-agent: ^7.0.0
     ssri: ^10.0.0
   checksum: 7268bf274a0f6dcf0343829489a4506603ff34bd0649c12058753900b0eb29191dce5dba12680719a5d0a983d3e57810f594a12f3c18494e93a1fbc6348a4540
-  languageName: node
-  linkType: hard
-
-"make-plural@npm:*":
-  version: 7.3.0
-  resolution: "make-plural@npm:7.3.0"
-  checksum: bb39b4b77533f0d5fb94eec128340b54dda8c1707d6b0a98c148e5d7bc23094e123f88275a61573fa31dc2f5d7352215cee0df523cd69b5d8fcb3969a2bcf8f8
   languageName: node
   linkType: hard
 
