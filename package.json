@@ -11,7 +11,7 @@
     "lint": "eslint --ext .ts,.tsx,.js,.jsx src app test",
     "lint:i18n": "eslint --fix --ext .json --format node_modules/eslint-plugin-i18n-json/formatter.js assets/langs/",
     "fix:deps": "expo install --fix",
-    "lint:all": "yarn lint && yarn lint:i18n",
+    "lint:all": "bun lint && bun lint:i18n",
     "build:web": "expo export --platform web",
     "test": "jest --runInBand"
   },
@@ -117,6 +117,5 @@
     "react-refresh": "~0.14.0"
   },
   "private": true,
-  "license": "UNLICENSED",
-  "packageManager": "yarn@3.6.0"
+  "license": "UNLICENSED"
 }

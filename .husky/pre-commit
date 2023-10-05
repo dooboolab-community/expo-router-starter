@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn lint:ci
-yarn lint:i18n
+bun lint:ci
+bun lint:i18n
