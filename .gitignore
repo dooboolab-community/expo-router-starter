@@ -69,3 +69,5 @@ web-build/
 
 .env*
 .jest
+
+dist

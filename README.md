@@ -25,3 +25,12 @@ You can create app even more easily with the cli tool [dooboo-cli](https://githu
 
 - In default, [dooboo-ui](https://github.com/dooboolab/dooboo-ui), a ui framework for [Expo](https://expo.io) is preinstalled in the project. Hope you like it 🧡.
 - Default package manager is set to [bun](https://bun.sh) which is fastest in 2023.
+
+
+## Stacks used for business logics
+
+- [furo](https://iam.furo.one)
+  - [firebase function](https://firebase.google.com/docs/functions)
+    - Used to authorize with custom token with Furo
+  - [google secret manager](https://cloud.google.com/secret-manager)
+    - Used to upload service account key

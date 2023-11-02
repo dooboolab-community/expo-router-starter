@@ -9,20 +9,37 @@ import {useDooboo} from 'dooboo-ui';
 import StatusBarBrightness from 'dooboo-ui/uis/StatusbarBrightness';
 import {SplashScreen, Stack} from 'expo-router';
 import * as SystemUI from 'expo-system-ui';
+import {initializeApp} from 'firebase/app';
+import {getAuth, onAuthStateChanged, type User} from 'firebase/auth';
+import {useRecoilState} from 'recoil';
 
+import {firebaseConfig} from '../config';
 import RootProvider from '../src/providers';
+import {authRecoilState} from '../src/recoils/atoms';
 import {AsyncStorageKey} from '../src/utils/constants';
 
 SplashScreen.preventAutoHideAsync();
 
+export const app = initializeApp(firebaseConfig);
+
 function Layout(): JSX.Element | null {
   const {assetLoaded, theme} = useDooboo();
+  const [user, setUser] = useRecoilState(authRecoilState);
+
+  // TODO: Remove Console
+  console.log('user', user);
 
   useEffect(() => {
     if (assetLoaded) {
       SplashScreen.hideAsync();
     }
   }, [assetLoaded]);
+
+  useEffect(() => {
+    onAuthStateChanged(getAuth(), (fireUser: User | null) => {
+      setUser(fireUser);
+    });
+  }, [setUser]);
 
   if (!assetLoaded) {
     return null;

@@ -41,8 +41,6 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     'expo-router',
     'sentry-expo',
     'expo-tracking-transparency',
-    '@react-native-firebase/app',
-    '@react-native-firebase/dynamic-links',
     'expo-localization',
     [
       'onesignal-expo-plugin',

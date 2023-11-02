@@ -1,9 +1,5 @@
-name: Web Staging on push to main
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
+name: Deploy on PR
+'on': pull_request
 
 jobs:
   build_and_deploy:
@@ -43,6 +39,5 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_EXPO_STARTER_51A2C }}'
-          channelId: live
           projectId: expo-starter-51a2c
   

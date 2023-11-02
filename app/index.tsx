@@ -2,7 +2,9 @@ import styled, {css} from '@emotion/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Button, SwitchToggle, useDooboo} from 'dooboo-ui';
 import {Stack, useRouter} from 'expo-router';
+import {useRecoilValue} from 'recoil';
 
+import {authRecoilState} from '../src/recoils/atoms';
 import {t} from '../src/STRINGS';
 import {AsyncStorageKey} from '../src/utils/constants';
 
@@ -25,6 +27,7 @@ const Content = styled.View`
 export default function Index(): JSX.Element {
   const {themeType, changeThemeType} = useDooboo();
   const {push} = useRouter();
+  const user = useRecoilValue(authRecoilState);
 
   return (
     <Container>
@@ -38,15 +41,16 @@ export default function Index(): JSX.Element {
           isOn={themeType === 'dark'}
           onPress={() => {
             const nextTheme = themeType === 'dark' ? 'light' : 'dark';
+            changeThemeType(nextTheme);
+
             AsyncStorage.setItem(
               AsyncStorageKey.DarkMode,
               themeType === 'dark' ? 'false' : 'true',
             );
-            changeThemeType(nextTheme);
           }}
         />
         <Button
-          onPress={() => push('/details')}
+          onPress={() => push(user ? '/sign-in' : '/details')}
           style={css`
             margin-top: 28px;
             margin-bottom: 40px;
