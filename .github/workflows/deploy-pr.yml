@@ -21,6 +21,10 @@ jobs:
       - name: Install modules
         run: bun install --immutable
 
+      - name: Install metro config (Adhoc)
+        run: bun add -D @expo/metro-config@^0.13.1 --yarn
+
+
       - name: Build web
         run: bun build:web
         env:
