@@ -1,9 +1,11 @@
 import styled, {css} from '@emotion/native';
 import {Button, Typography} from 'dooboo-ui';
 import {Image} from 'expo-image';
+import {Stack} from 'expo-router';
 
 import useFuro from '../../src/hooks/useFuro';
 import {IC_MASK} from '../../src/icons';
+import {t} from '../../src/STRINGS';
 
 const Container = styled.View`
   background-color: ${({theme}) => theme.bg.basic};
@@ -18,6 +20,11 @@ export default function SignIn(): JSX.Element {
 
   return (
     <Container>
+      <Stack.Screen
+        options={{
+          title: t('SIGN_IN'),
+        }}
+      />
       <Typography.Heading2
         style={css`
           text-align: center;

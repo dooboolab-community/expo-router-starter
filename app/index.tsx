@@ -50,7 +50,7 @@ export default function Index(): JSX.Element {
           }}
         />
         <Button
-          onPress={() => push(user ? '/sign-in' : '/details')}
+          onPress={() => push(!user ? '/sign-in' : '/details')}
           style={css`
             margin-top: 28px;
             margin-bottom: 40px;
