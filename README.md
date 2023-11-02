@@ -34,6 +34,9 @@ You can create app even more easily with the cli tool [dooboo-cli](https://githu
     - Used to authorize with custom token with Furo
   - [google secret manager](https://cloud.google.com/secret-manager)
     - Used to upload service account key
+- [firebase hosting](https://firebase.google.com/docs/hosting)
+  - Set `read and write` permission to github action
+    - https://github.com/FirebaseExtended/action-hosting-deploy/issues/108#issuecomment-885215418
 
 ### Notes
 
