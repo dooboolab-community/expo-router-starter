@@ -34,3 +34,10 @@ You can create app even more easily with the cli tool [dooboo-cli](https://githu
     - Used to authorize with custom token with Furo
   - [google secret manager](https://cloud.google.com/secret-manager)
     - Used to upload service account key
+
+### Notes
+
+You need below role when deploying firebase function for your account.
+<img width="557" alt="roles" src="https://github.com/dooboolab-community/expo-router-starter/assets/27461460/69dd49e0-2580-4dde-a3b4-13538f5d8d81">
+
+- [Reference](https://github.com/firebase/firebase-tools/issues/5244)
