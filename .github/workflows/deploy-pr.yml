@@ -26,14 +26,13 @@ jobs:
         env:
           ROOT_URL: ${{ secrets.ROOT_URL }}
           furoClientId: ${{ secrets.furoClientId }}
-          airtableToken: ${{ secrets.airtableToken }}
           firebaseApiKey: ${{ secrets.firebaseApiKey }}
           firebaseAuthDomain: ${{ secrets.firebaseAuthDomain }}
           firebaseProjectId: ${{ secrets.firebaseProjectId }}
-          firebaseStorageBucket: ${{ secrets.firebaseStorage }}
+          firebaseStorageBucket: ${{ secrets.firebaseStorageBucket }}
           firebaseMessagingSenderId: ${{ secrets.firebaseMessagingSenderId }}
           firebaseAppId: ${{ secrets.firebaseAppId }}
-          firebaseMeasurementId: ${{ secrets.firebaseMeasurement }}
+          firebaseMeasurementId: ${{ secrets.firebaseMeasurementId }}
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
