@@ -23,4 +23,5 @@ You can create app even more easily with the cli tool [dooboo-cli](https://githu
 
 ## Quick News
 
-- In default, [dooboo-ui](https://github.com/dooboolab/dooboo-ui) ui framework is preinstalled in the project. Hope you like it 🧡.
+- In default, [dooboo-ui](https://github.com/dooboolab/dooboo-ui), a ui framework for [Expo](https://expo.io) is preinstalled in the project. Hope you like it 🧡.
+- Default package manager is set to [bun](https://bun.sh) which is fastest in 2023.

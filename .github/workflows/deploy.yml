@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
       - uses: expo/expo-github-action@v8
         with:
           expo-version: latest
@@ -16,10 +19,10 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Install modules
-        run: yarn install --immutable
+        run: bun install --immutable
 
       - name: Build web
-        run: yarn build:web
+        run: bun build:web
         env:
           ROOT_URL: ${{ secrets.ROOT_URL }}
           onesignalAppId: ${{ secrets.onesignalAppId}}

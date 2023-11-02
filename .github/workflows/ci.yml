@@ -16,22 +16,24 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          cache: yarn
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
 
       - name: Install modules
-        run: YARN_CHECKSUM_BEHAVIOR=update yarn --immutable
+        run: bun install --immutable
 
       - name: Check linting
-        run: yarn lint:all
+        run: bun lint:all
 
       - name: Build typescript
-        run: yarn tsc
+        run: bun tsc
 
       - name: Remove dist
         run: rm -rf ./dist
 
       - name: Test
-        run: yarn test --coverage --silent
+        run: bun run test --coverage --silent
 
       # - name: Upload coverage to Codecov
       #   uses: codecov/codecov-action@v1

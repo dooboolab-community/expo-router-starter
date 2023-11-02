@@ -2,12 +2,28 @@ import 'dotenv/config';
 
 import type {ConfigContext, ExpoConfig} from '@expo/config';
 import withAndroidLocalizedName from '@mmomtchev/expo-android-localized-app-name';
+import dotenv from 'dotenv';
+import {expand} from 'dotenv-expand';
+import path from 'path';
 
 import {version} from './package.json';
 
+// https://github.com/expo/expo/issues/23727#issuecomment-1651609858
+if (process.env.STAGE) {
+  expand(
+    dotenv.config({
+      path: path.join(
+        __dirname,
+        ['./.env', process.env.STAGE].filter(Boolean).join('.'),
+      ),
+      override: true,
+    }),
+  );
+}
+
 const DEEP_LINK_URL = '[firebaseAppId].web.app';
 
-const buildNumber = 63;
+const buildNumber = 1;
 
 export default ({config}: ConfigContext): ExpoConfig => ({
   ...config,
@@ -22,6 +38,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   plugins: [
     // @ts-ignore
     withAndroidLocalizedName,
+    'expo-router',
     'sentry-expo',
     'expo-tracking-transparency',
     '@react-native-firebase/app',
