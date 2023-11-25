@@ -69,3 +69,9 @@ web-build/
 
 .env*
 .jest
+
+# Android
+android
+
+# iOS
+ios

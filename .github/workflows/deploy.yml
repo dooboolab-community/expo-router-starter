@@ -25,10 +25,4 @@ jobs:
         run: bun build:web
         env:
           ROOT_URL: ${{ secrets.ROOT_URL }}
-          onesignalAppId: ${{ secrets.onesignalAppId}}
-          facebookAppId: ${{ secrets.facebookAppId }}
-          googleClientIdWeb: ${{ secrets.googleClientIdWeb }}
-          googleClientIdAndroid: ${{ secrets.googleClientIdAndroid }}
-          googleClientIdIOS: ${{ secrets.googleClientIdIOS }}
-          sentryAuthToken: ${{ secrets.sentryAuthToken }}
           expoProjectId: ${{ secrets.expoProjectId }}

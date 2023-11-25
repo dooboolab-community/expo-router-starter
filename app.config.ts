@@ -39,20 +39,8 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     // @ts-ignore
     withAndroidLocalizedName,
     'expo-router',
-    'sentry-expo',
     'expo-tracking-transparency',
-    '@react-native-firebase/app',
-    '@react-native-firebase/dynamic-links',
     'expo-localization',
-    [
-      'onesignal-expo-plugin',
-      {
-        mode: 'development',
-        smallIcons: ['./assets/ic_stat_onesignal_default.png'],
-        // https://developer.apple.com/account/#/membership
-        // devTeam: '',
-      },
-    ],
   ],
   splash: {
     image: './assets/splash.png',
@@ -65,7 +53,6 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     googleClientIdAndroid: process.env.googleClientIdAndroid,
     googleClientIdWeb: process.env.googleClientIdWeb,
     facebookAppId: process.env.facebookAppId,
-    onesignalAppId: process.env.onesignalAppId,
     expoProjectId: process.env.expoProjectId,
     firebaseWebApiKey: process.env.firebaseWebApiKey,
     // eas: {projectId: ''},

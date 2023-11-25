@@ -10,7 +10,6 @@ export const googleClientIdIOS = extra?.googleClientIdIOS;
 export const googleClientIdAndroid = extra?.googleClientIdAndroid;
 export const googleClientIdWeb = extra?.googleClientIdWeb;
 export const facebookAppId = extra?.facebookAppId;
-export const onesignalAppId = extra?.onesignalAppId;
 export const expoProjectId = extra?.expoProjectId;
 export const firebaseWebApiKey = extra?.firebaseWebApiKey;
 
