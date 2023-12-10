@@ -62,7 +62,6 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     // requestHeaders: {'expo-channel-name': 'production'},
     // url: '',
   },
-  runtimeVersion: '48.0.0',
   assetBundlePatterns: ['**/*'],
   userInterfaceStyle: 'automatic',
   locales: {
