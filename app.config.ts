@@ -69,7 +69,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   },
   ios: {
     buildNumber: buildNumber.toString(),
-    bundleIdentifier: 'com.dooboolab',
+    bundleIdentifier: 'io.dooboo',
     associatedDomains: [`applinks:${DEEP_LINK_URL}`],
     supportsTablet: true,
     entitlements: {
