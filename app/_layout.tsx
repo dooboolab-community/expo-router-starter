@@ -70,8 +70,8 @@ function Layout(): JSX.Element | null {
                     canGoBack
                       ? back()
                       : Platform.OS === 'web'
-                      ? (window.location.href = WEB_URL)
-                      : replace('/')
+                        ? (window.location.href = WEB_URL)
+                        : replace('/')
                   }
                   style={
                     Platform.OS === 'web'
