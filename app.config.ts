@@ -109,5 +109,5 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     ],
   },
   description: 'Starter project from dooboo-cli.',
-  web: {bundler: 'metro', favicon: './assets/favicon.co'},
+  web: {bundler: 'metro', favicon: './assets/favicon.png'},
 });
