@@ -42,6 +42,9 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     'expo-tracking-transparency',
     'expo-localization',
   ],
+  experiments: {
+    typedRoutes: true,
+  },
   splash: {
     image: './assets/splash.png',
     resizeMode: 'contain',
