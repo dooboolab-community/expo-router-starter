@@ -42,6 +42,9 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     'expo-tracking-transparency',
     'expo-localization',
   ],
+  experiments: {
+    typedRoutes: true,
+  },
   splash: {
     image: './assets/splash.png',
     resizeMode: 'contain',
@@ -109,5 +112,5 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     ],
   },
   description: 'Starter project from dooboo-cli.',
-  web: {bundler: 'metro'},
+  web: {bundler: 'metro', favicon: './assets/favicon.png'},
 });
