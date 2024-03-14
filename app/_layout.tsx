@@ -8,7 +8,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {Icon, useDooboo} from 'dooboo-ui';
 import CustomPressable from 'dooboo-ui/uis/CustomPressable';
 import StatusBarBrightness from 'dooboo-ui/uis/StatusbarBrightness';
-import {SplashScreen, Stack, useRouter} from 'expo-router';
+import {Stack, useRouter} from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
 import * as SystemUI from 'expo-system-ui';
 
 import RootProvider from '../src/providers';
@@ -57,7 +58,6 @@ function Layout(): JSX.Element | null {
             headerStyle: {backgroundColor: theme.bg.basic},
             headerTintColor: theme.text.label,
             headerTitleStyle: {
-              fontFamily: 'Pretendard-Bold',
               fontWeight: 'bold',
               color: theme.text.basic,
             },

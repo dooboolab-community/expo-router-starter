@@ -41,6 +41,17 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     'expo-router',
     'expo-tracking-transparency',
     'expo-localization',
+    [
+      'expo-font',
+      {
+        fonts: [
+          'node_modules/dooboo-ui/uis/Icon/doobooui.ttf',
+          'node_modules/dooboo-ui/uis/Icon/Pretendard-Bold.otf',
+          'node_modules/dooboo-ui/uis/Icon/Pretendard-Regular.otf',
+          'node_modules/dooboo-ui/uis/Icon/Pretendard-Thin.otf',
+        ],
+      },
+    ],
   ],
   experiments: {
     typedRoutes: true,
