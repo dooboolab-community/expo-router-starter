@@ -27,9 +27,9 @@ const buildNumber = 1;
 
 export default ({config}: ConfigContext): ExpoConfig => ({
   ...config,
-  name: 'dooboo',
-  scheme: 'dooboo',
-  slug: 'dooboo-slug',
+  name: 'myapp',
+  scheme: 'myapp',
+  slug: 'myapp-slug',
   privacy: 'public',
   platforms: ['ios', 'android', 'web'],
   version,
@@ -83,7 +83,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   },
   ios: {
     buildNumber: buildNumber.toString(),
-    bundleIdentifier: 'io.dooboo',
+    bundleIdentifier: 'io.myapp',
     associatedDomains: [`applinks:${DEEP_LINK_URL}`],
     supportsTablet: true,
     entitlements: {
@@ -108,7 +108,7 @@ export default ({config}: ConfigContext): ExpoConfig => ({
       foregroundImage: './assets/adaptive_icon.png',
       backgroundColor: '#2F2F2F',
     },
-    package: 'io.dooboo',
+    package: 'io.myapp',
     intentFilters: [
       {
         action: 'VIEW',
