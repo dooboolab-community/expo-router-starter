@@ -2,10 +2,8 @@ const path = require('path');
 
 module.exports = {
   root: true,
-  extends: [
-    '@dooboo/eslint-config-react-native',
-    'plugin:i18n-json/recommended',
-  ],
+  extends: ['expo', 'prettier', 'plugin:i18n-json/recommended'],
+  plugins: ['prettier'],
   rules: {
     'eslint-comments/no-unlimited-disable': 0,
     'eslint-comments/no-unused-disable': 0,
