@@ -63,10 +63,6 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   },
   extra: {
     ROOT_URL: process.env.ROOT_URL,
-    googleClientIdIOS: process.env.googleClientIdIOS,
-    googleClientIdAndroid: process.env.googleClientIdAndroid,
-    googleClientIdWeb: process.env.googleClientIdWeb,
-    facebookAppId: process.env.facebookAppId,
     expoProjectId: process.env.expoProjectId,
     firebaseWebApiKey: process.env.firebaseWebApiKey,
     // eas: {projectId: ''},
@@ -104,10 +100,6 @@ export default ({config}: ConfigContext): ExpoConfig => ({
       'NOTIFICATIONS',
       'USER_FACING_NOTIFICATIONS',
     ],
-    adaptiveIcon: {
-      foregroundImage: './assets/adaptive_icon.png',
-      backgroundColor: '#2F2F2F',
-    },
     package: 'io.myapp',
     intentFilters: [
       {
