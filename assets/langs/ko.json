@@ -1,5 +1,9 @@
 {
-  "DETAILS": "상세",
-  "HOME": "홈",
-  "SEE_DETAILS": "상세 보기"
+  "home": {
+    "title": "홈",
+    "seeDetails": "상세보기"
+  },
+  "details": {
+    "title": "상세"
+  }
 }

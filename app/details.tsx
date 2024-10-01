@@ -19,11 +19,11 @@ export default function Details(): JSX.Element {
     <Container>
       <Stack.Screen
         options={{
-          title: t('DETAILS'),
+          title: t('details.title'),
         }}
       />
       <Content>
-        <Typography.Body1>{t('DETAILS')}</Typography.Body1>
+        <Typography.Body1>{t('details.title')}</Typography.Body1>
       </Content>
     </Container>
   );

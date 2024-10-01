@@ -30,7 +30,7 @@ export default function Index(): JSX.Element {
     <Container>
       <Stack.Screen
         options={{
-          title: t('HOME'),
+          title: t('home.title'),
         }}
       />
       <Content>
@@ -56,7 +56,7 @@ export default function Index(): JSX.Element {
               font-family: Pretendard-Bold;
             `,
           }}
-          text={t('SEE_DETAILS')}
+          text={t('home.seeDetails')}
         />
       </Content>
     </Container>
