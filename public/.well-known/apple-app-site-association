@@ -3,7 +3,7 @@
     "apps": [],
     "details": [
       {
-        "appID": "[appleDevTeamId].com.dooboolab",
+        "appID": "[appleDevTeamId].dev.hyo",
         "paths": ["*"]
       }
     ]
