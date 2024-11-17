@@ -30,11 +30,11 @@ export default ({config}: ConfigContext): ExpoConfig => ({
   name: 'myapp',
   scheme: 'myapp',
   slug: 'myapp-slug',
-  privacy: 'public',
   platforms: ['ios', 'android', 'web'],
   version,
   orientation: 'default',
   icon: './assets/icon.png',
+  newArchEnabled: true,
   plugins: [
     // @ts-ignore
     withAndroidLocalizedName,
@@ -57,9 +57,10 @@ export default ({config}: ConfigContext): ExpoConfig => ({
     typedRoutes: true,
   },
   splash: {
-    image: './assets/splash.png',
+    image: './assets/icon.png',
     resizeMode: 'contain',
     backgroundColor: '#1B1B1B',
+    imageWidth: 200,
   },
   extra: {
     ROOT_URL: process.env.ROOT_URL,

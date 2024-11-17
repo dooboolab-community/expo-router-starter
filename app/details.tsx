@@ -7,6 +7,7 @@ import {t} from '../src/STRINGS';
 const Container = styled.View`
   flex: 1;
   align-self: stretch;
+  
   background-color: ${({theme}) => theme.bg.basic};
 `;
 
